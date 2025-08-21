@@ -1,0 +1,222 @@
+/* Services Page Specific Styles */
+
+/* Services Hero */
+.services-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1509391366360-2e959784a276') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0 100px;
+    margin-top: 80px;
+}
+
+.services-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease;
+}
+
+.services-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    animation: fadeInUp 1s ease;
+}
+
+/* Services Grid */
+.services-grid {
+    padding: 80px 0;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-intro h2{
+    color: black;
+}
+.section-intro p{
+    color: rgb(91, 77, 77);
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-image {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.05);
+}
+
+.service-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.service-content {
+    padding: 25px;
+}
+
+.service-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.service-features {
+    margin-bottom: 15px;
+}
+
+.service-features p {
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.service-features i {
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.service-description {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.service-cta {
+    display: flex;
+    gap: 15px;
+}
+
+/* Service Benefits */
+.service-benefits {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+.container h2{
+    color: #000;
+}
+
+.benefit-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.benefit-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .services-hero h1 {
+        font-size: 2.8rem;
+    }
+    
+    .services-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .services-hero {
+        padding: 120px 0 80px;
+    }
+    
+    .services-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .contact .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .services-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-cta {
+        flex-direction: column;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}

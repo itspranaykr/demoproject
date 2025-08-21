@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG Solar Solutions - E-Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="eshop.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.webp" alt="">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="eshop.html" class="active">E-Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="cart.html" class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop Hero Section -->
+    <section class="shop-hero">
+        <div class="container">
+            <h1>Solar Products Shop</h1>
+            <p>High-quality solar products for your home and business</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="shop-controls">
+                <div class="search-box">
+                    <input type="text" placeholder="Search products..." id="searchInput">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-dropdown">
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="panels">Solar Panels</option>
+                        <option value="batteries">Batteries</option>
+                        <option value="inverters">Inverters</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="panels" data-id="1">
+                    <div class="product-badge">Bestseller</div>
+                    <div class="product-image">
+                        <img src="s1.jpg" alt="Solar Panel">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Hybrid Solar complete setup</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(24)</span>
+                        </div>
+                        <p style="color: black;" class="product-desc">Hybrid complete solar kit</p>
+                        <div class="product-price">
+                            <span class="current-price">₹75,000</span>
+                            <span class="original-price">₹1,00,000</span>
+                            <span class="discount">25% off</span>
+                        </div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="batteries" data-id="2">
+                    <div class="product-image">
+                        <img src="s2.jpg" alt="Solar Battery">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Luminous Complete Solar Setup</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(18)</span>
+                        </div>
+                        <p style="color: black;" class="product-desc">Off grid solar system Kit</p>
+                        <div class="product-price">
+                            <span class="current-price">₹65,000</span>
+                            <span class="original-price">₹1,00,000</span>
+                            <span class="discount">35% off</span>
+                        </div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="inverters" data-id="3">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="s3.jpg" alt="Solar Inverter">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Off grid Solar System kit</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(32)</span>
+                        </div>
+                        <p style="color: black;" class="product-desc">Off grid Solar System kit</p>
+                        <div class="product-price">
+                            <span class="current-price">₹54,999</span>
+                            <span class="original-price">₹99,999</span>
+                            <span class="discount">45% off</span>4
+                        </div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+             <!--   <div class="product-card" data-category="accessories" data-id="4">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1598124146163-36819847286d" alt="Solar Mount">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Roof Mounting Kit</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(12)</span>
+                        </div>
+                        <p class="product-desc">Complete aluminum mounting system for rooftop solar panels</p>
+                        <div class="product-price">
+                            <span class="current-price">₹8,499</span>
+                        </div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>-->
+
+                <!-- Product 5 -->
+             <!--   <div class="product-card" data-category="panels" data-id="5">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d" alt="Solar Panel">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Solar Panel 400W</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(15)</span>
+                        </div>
+                        <p class="product-desc">High-power monocrystalline solar panel with PERC technology</p>
+                        <div class="product-price">
+                            <span class="current-price">₹16,499</span>
+                            <span class="original-price">₹18,999</span>
+                            <span class="discount">13% off</span>
+                        </div>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div> -->
+
+                <!-- Product 6 (Out of Stock) -->
+                <div class="product-card" data-category="accessories" data-id="6">
+                    <div class="product-badge out-of-stock">Out of Stock</div>
+                    <div class="product-image">
+                        <img src="s4.jpg" alt="Solar Cable">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Smarten Off grid complete kit</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(8)</span>
+                        </div>
+                        <p style="color: black;" class="product-desc">Smarten Off grid complete kit</p>
+                        <div class="product-price">
+                            <span class="current-price">₹38,499</span>
+                        </div>
+                        <button class="btn add-to-cart" disabled>Out of Stock</button>
+                    </div>
+                </div>
+
+                                <!-- Product 7 (Out of Stock) -->
+                <div class="product-card" data-category="accessories" data-id="6">
+                    <div class="product-badge out-of-stock">Out of Stock</div>
+                    <div class="product-image">
+                        <img src="s5.jpg" alt="Solar Cable">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">UTL Ongrid invertor</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(8)</span>
+                        </div>
+                        <p style="color: black;" class="product-desc">UTL Ongrid invertor</p>
+                        <div class="product-price">
+                            <span class="current-price">₹39,499</span>
+                        </div>
+                        <button class="btn add-to-cart" disabled>Out of Stock</button>
+                    </div>
+                </div>
+
+                                <!-- Product 8 (Out of Stock) -->
+                <div class="product-card" data-category="accessories" data-id="6">
+                    <div class="product-badge out-of-stock">Out of Stock</div>
+                    <div class="product-image">
+                        <img src="s6.jpg" alt="Solar Cable">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">UTL Solar Panel</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(8)</span>
+                        </div>
+                        <p style="color: black;" class="product-desc">UTL Solar Panel</p>
+                        <div class="product-price">
+                            <span class="current-price">₹65,499</span>
+                        </div>
+                        <button class="btn add-to-cart" disabled>Out of Stock</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Help Choosing Solar Products?</h2>
+                <p>Our solar experts are ready to help you select the perfect products for your needs</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn primary">Contact Our Experts</a>
+                    <a href="tel:+917011669314" class="btn secondary">Call Us Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="logo.webp" alt="">
+                    </div>
+                    <p>Leading solar energy solutions provider since 2020, committed to a sustainable future.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="eshop.html">E-Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">OFF Grid Solar System</a></li>
+                        <li><a href="#">On-Grid Solar Systems</a></li>
+                        <li><a href="#">HYBRID SOLAR SYSTEM</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AG ENTERPRISES. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="eshope.js"></script>
+    <script src="home.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

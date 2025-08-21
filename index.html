@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgSolar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.webp" alt="">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="eshop.html">E-Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Chatbot Button -->
+    <div class="chatbot-btn" id="chatbotBtn">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <h3>AgSolar Assistant</h3>
+            <span class="close-btn" id="closeChatbot"><i class="fas fa-times"></i></span>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot-message">
+                <p>Hello! I'm AgSolar Assistant. How can I help you with solar solutions today?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="userInput" placeholder="Type your message here...">
+            <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Harness the Power of the Sun</h1>
+                <p>Providing sustainable solar energy solutions for homes and businesses since 2020</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn primary">Get a Quote</a>
+                    <a href="#services" class="btn secondary">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Type of Systems</h2>
+            <p class="section-subtitle">Comprehensive solar solutions for all your needs</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="servicecard(sc1).jpg" alt="">
+                    </div>
+                    
+                    <h3>OFF Grid Solar System</h3>
+                    <p>Off-grid systems operate independently of the main power grid, relying on renewable energy sources and storage solutions for electricity supply.</p>
+                    <a href="#" class="btn small">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="sc2.jpeg" alt="">
+                    </div>
+                    <h3>On-Grid Solar Systems</h3>
+                    <p>On-grid systems are connected to the main power grid, allowing for the exchange of electricity and often incorporating renewable sources.</p>
+                    <a href="#" class="btn small">Learn More</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="sc3.png" alt="">
+                    </div>
+                    <h3>HYBRID SOLAR SYSTEM</h3>
+                    <p>Hybrid systems combine multiple energy sources like solar, wind, and grid power with energy storage, offering flexibility and reliability.</p>
+                    <a href="#" class="btn small">Learn More</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <i class="fas fa-smile"></i>
+                <h3 class="counter" data-target="1090">0</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-solar-panel"></i>
+                <h3 class="counter" data-target="1500">0</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-calendar-alt"></i>
+                <h3 class="counter" data-target="5">0</h3>
+                <p>Years of Experience</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3 class="counter" data-target="50">0</h3>
+                <p>Cities Covered</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Covered Section -->
+    <section class="cities">
+        <div class="container1">
+            <h2 class="section-title">Cities We Serve</h2>
+            <p class="section-subtitle">Providing solar solutions across multiple locations</p>
+            
+            <div class="cities-slider">
+                <div class="city-card">
+                    <img src="ct1.jpeg" alt="New York">
+                    <h3>Noida</h3>
+                </div>
+                <div class="city-card">
+                    <img src="ct2.jpeg" alt="Los Angeles">
+                    <h3>Ghaziabad</h3>
+                </div>
+                <div class="city-card">
+                    <img src="ct3.jpeg" alt="Chicago">
+                    <h3>Delhi</h3>
+                </div>
+                <div class="city-card">
+                    <img src="ct4.jpeg" alt="Houston">
+                    <h3>Sahibabad</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Hear from our satisfied customers</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>AG Solar Solutions designed a custom solar system that perfectly matched our needs. Their tailored approach and expert team made the process seamless. Highly recommended for anyone seeking reliable, personalized solar solutions!</p>
+                    </div>
+                    <div class="client">
+                        <img src="t1.png" alt="Sarah Johnson">
+                        <div class="client-info">
+                            <h4>Mr. Manoj Kumar Aggarwal</h4>
+                            <p>Government Employee</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>AG Solar Solutions made going solar easy and affordable. Great service, fair pricing, and a system that truly fits my needs.</p>
+                    </div>
+                    <div class="client">
+                        <img src="t1.png" alt="Michael Chen">
+                        <div class="client-info">
+                            <h4>Mr. Naresh</h4>
+                            <p>CEO - Silk Company</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>AG Solar Solutions offers top-quality service at the best price. Their team was professional, transparent, and delivered great value for every penny. Highly recommend them for cost-effective solar solutions!.</p>
+                    </div>
+                    <div class="client">
+                        <img src="t1.png" alt="Emily Rodriguez">
+                        <div class="client-info">
+                            <h4>Murari Lal Public School</h4>
+                            <p>Faridabad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Get in touch for a free consultation</p>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Pusta Road,Kali Mata Mandir,Gardi Gol Chakkar Sector 121,Noida, Noida, India, Uttar Pradesh</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 7011669314</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>agsolarsolutions008@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Mon-Sun: 9AM - 10PM<br>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Agsolarsolutionsindia"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/AGsolarIndia"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/agsolarsolutionsindia/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7005.625949888687!2d77.404371!3d28.605387000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef007ab95247%3A0x232ae599bacf2e07!2sAG%20SOLAR%20SOLUTIONS!5e0!3m2!1sen!2sin!4v1755506112073!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="logo.webp" alt="">
+                    </div>
+                    <p>Leading solar energy solutions provider since 2020, committed to a sustainable future.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="eshop.html">E-Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">OFF Grid Solar System</a></li>
+                        <li><a href="#">On-Grid Solar Systems</a></li>
+                        <li><a href="#">HYBRID SOLAR SYSTEM</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AG ENTERPRISES. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+    <script src="chatbot.js"></script>
+    
+</body>
+</html>

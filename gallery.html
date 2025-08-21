@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG Solar - Project Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+     <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.webp" alt="">
+              <!-- <i class="fas fa-solar-panel"></i>-->
+                <!--<h1>AG ENTERPRISES</h1>-->
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="eshop.html">E-Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html"class="active">Gallery</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="container">
+            <h1>Our Solar Projects Gallery</h1>
+            <p>Explore our successful solar installations across residential, commercial, and industrial sectors</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="industrial">Industrial</button>
+                <button class="filter-btn" data-filter="agricultural">Agricultural</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid">
+        <div class="container">
+            <div class="gallery-container">
+                <!-- Residential Projects -->
+                <div class="gallery-item" data-category="residential">
+                    <div class="gallery-image">
+                        <img src="in1.jpg" alt="Residential Rooftop Solar">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Modern Villa Solar Installation</h3>
+                                <p>10kW rooftop system in Mumbai with battery backup</p>
+                                <span class="project-type">Residential</span>
+                            </div>
+                            <button class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="residential">
+                    <div class="gallery-image">
+                        <img src="in2.jpg" alt="Apartment Solar">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Apartment Complex Solar</h3>
+                                <p>25kW shared system for common areas in Pune</p>
+                                <span class="project-type">Residential</span>
+                            </div>
+                            <button class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Commercial Projects -->
+                <div class="gallery-item" data-category="commercial">
+                    <div class="gallery-image">
+                        <img src="in3.jpg" alt="Office Building Solar">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Corporate Office Solar</h3>
+                                <p>50kW rooftop system for IT company in Bangalore</p>
+                                <span class="project-type">Commercial</span>
+                            </div>
+                            <button class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="commercial">
+                    <div class="gallery-image">
+                        <img src="in4.jpg" alt="Shopping Mall Solar">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Shopping Mall Installation</h3>
+                                <p>100kW grid-tied system for shopping complex</p>
+                                <span class="project-type">Commercial</span>
+                            </div>
+                            <button class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industrial Projects -->
+                <div class="gallery-item" data-category="industrial">
+                    <div class="gallery-image">
+                        <img src="in5.jpg" alt="Factory Solar">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Manufacturing Plant</h3>
+                                <p>500kW ground-mounted system for automotive factory</p>
+                                <span class="project-type">Industrial</span>
+                            </div>
+                            <button class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="industrial">
+                    <div class="gallery-image">
+                        <img src="rd1.webp" alt="Warehouse Solar">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Warehouse Solar Project</h3>
+                                <p>250kW rooftop system for logistics warehouse</p>
+                                <span class="project-type">Industrial</span>
+                            </div>
+                            <button class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agricultural Projects -->
+                <div class="gallery-item" data-category="agricultural">
+                    <div class="gallery-image">
+                        <img src="rd2.webp" alt="Farm Solar">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Agricultural Solar Pump</h3>
+                                <p>5HP solar pump for farm irrigation in Maharashtra</p>
+                                <span class="project-type">Agricultural</span>
+                            </div>
+                            <button class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="agricultural">
+                    <div class="gallery-image">
+                        <img src="rd3.webp" alt="Greenhouse Solar">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Greenhouse Solar Setup</h3>
+                                <p>Integrated solar system for climate-controlled greenhouse</p>
+                                <span class="project-type">Agricultural</span>
+                            </div>
+                            <button class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Projects -->
+                <div class="gallery-item" data-category="residential">
+                    <div class="gallery-image">
+                        <img src="rd4.webp" alt="Bungalow Solar">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Luxury Bungalow Project</h3>
+                                <p>15kW system with lithium battery backup</p>
+                                <span class="project-type">Residential</span>
+                            </div>
+                            <button class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="commercial">
+                    <div class="gallery-image">
+                        <img src="rd5.webp"Hotel Solar">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Hotel Solar Installation</h3>
+                                <p>75kW system for 5-star hotel in Goa</p>
+                                <span class="project-type">Commercial</span>
+                            </div>
+                            <button class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="gallery-item" data-category="industrial">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" alt="Industrial Solar">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Textile Factory Installation</h3>
+                                <p>350kW system for textile manufacturing unit</p>
+                                <span class="project-type">Industrial</span>
+                            </div>
+                            <button class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="agricultural">
+                    <div class="gallery-image">
+                        <img src="https://images.unsplash.com/photo-1620654458539-b4c186f32a32" alt="Farm Solar">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Dairy Farm Solar Project</h3>
+                                <p>20kW system for dairy farm operations</p>
+                                <span class="project-type">Agricultural</span>
+                            </div>
+                            <button class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="gallery-stats">
+        <div class="container">
+            <h2 class="section-title">Our Impact in Numbers</h2>
+            <p class="section-subtitle">We take pride in our contribution to sustainable energy solutions across India</p>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-solar-panel"></i>
+                    <h3>1600+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-home"></i>
+                    <h3>800+</h3>
+                    <p>Residential Installations</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-building"></i>
+                    <h3>500+</h3>
+                    <p>Commercial Projects</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-industry"></i>
+                    <h3>500+</h3>
+                    <p>Industrial Systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gallery-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Solar Journey?</h2>
+                <p>Join thousands of satisfied customers who have made the switch to clean, renewable energy</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn primary">Get Free Consultation</a>
+                    <a href="tel:+917011669314" class="btn secondary">Call Us Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="logo.webp" alt="">
+                    </div>
+                    <p>Leading solar energy solutions provider since 2020, committed to a sustainable future.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="eshop.html">E-Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">OFF Grid Solar System</a></li>
+                        <li><a href="#">On-Grid Solar Systems</a></li>
+                        <li><a href="#">HYBRID SOLAR SYSTEM</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AG ENTERPRISES. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
